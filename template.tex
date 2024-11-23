@@ -1,0 +1,221 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\setlength{\multicolsep}{-3.0pt}
+\setlength{\columnsep}{-1pt}
+\input{glyphtounicode}
+\usepackage[margin=1.4cm]{geometry}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.15in}
+\addtolength{\textwidth}{0.3in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{0pt}}
+  }
+}
+
+\newcommand{\classesList}[4]{
+    \item\small{
+        {#1 #2 #3 #4 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{1.0\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & \textbf{\small #2} \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{1.001\textwidth}{l@{\extracolsep{\fill}}r}
+      \small#1 & \textbf{\small #2}\\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+
+\renewcommand\labelitemi{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.0in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}\vspace{0pt}
+
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+\begin{document}
+
+% ---------- HEADING ----------
+
+\begin{center}
+    {\Large \scshape Firstname Lastname} \\[2mm]
+    \footnotesize \raisebox{-0.1\height}
+    \faPhone\ \underline{(03) 123-456} ~ 
+    {\faEnvelope\ \underline{example@gmail.com}} ~ 
+    {\faLinkedin\ \underline{\href{https://www.linkedin.com/in/example/}{linkedin.com/in/example}}  ~
+    {\faGithub\ \underline{\href{https://github.com/example}{github.com/example}} ~
+    {\faBriefcase\ \underline{\href{https://example.com/}{example.com}}
+    \vspace{-8pt}
+\end{center}
+
+% ---------- EDUCATION ----------
+ 
+\section{Education} \\[1mm]
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {University Name}{Expected Graduation Year: May 2030}
+      {Bachelor of Science in Computer Science | Minor in Mathematics
+      }{Location}
+  \resumeSubHeadingListEnd
+    \resumeItemListStart
+        \resumeItem {Dean's Honor List | \textbf{GPA: 4.0}}
+        \vspace{-7pt}
+        \resumeItem {Courses: Software Engineering, Artificial Intelligence, Applied Operating Systems, Computer Architecture, Object Oriented Programming (OOP), Data Structures and Algorithms, Python for Data Science}
+    \resumeItemListEnd
+    \vspace{-12pt}
+    
+% ---------- EXPERIENCE ----------
+
+\section{Experience}
+
+\resumeSubHeadingListStart
+  \resumeSubheading{Tech Company 1}{May 2025 -- Sep 2025}{Job Title 1}{Location, Country} 
+    \resumeItemListStart
+      \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+      \resumeItem{Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. }
+      \resumeItem{Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Tech Company 2}{May 2025 -- Sep 2025}{Job Title 2}{Location, Country} 
+    \resumeItemListStart
+      \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+      \resumeItem{Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.}
+  \resumeItemListEnd
+
+  \resumeSubheading{Tech Company 3}{May 2025 -- Sep 2025}{Job Title 3}{Location, Country} 
+    \resumeItemListStart
+      \resumeItem{Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+      \resumeItem{Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem.}
+  \resumeItemListEnd
+    
+\resumeSubHeadingListEnd
+
+\vspace{-12pt}
+
+% ---------- PROJECTS ----------
+
+\section{Projects} 
+ \vspace{-5pt}
+   \resumeSubHeadingListStart
+   \resumeProjectHeading
+        {\textbf{{Project 1}} $|$ \emph{\href{www.website.com}{Website}{ $|$ }\href{www.github/sourcecode}{Source Code}}}{ReactJS $|$ TailwindCSS $|$ PostgreSQL}
+        \\[5mm]
+        \resumeItemListStart
+          \resumeItem{Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.}
+          \resumeItem{Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.}
+        \resumeItemListEnd
+ \vspace{-20pt}
+ 
+   \resumeProjectHeading
+        {\textbf{{Project 2}} $|$ \emph{\href{https://project2.com/}{Website}}}{NextJS $|$ TypeScript $|$ Spring Boot}
+        \\[5mm]
+        \resumeItemListStart
+          \resumeItem{Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.}
+        \resumeItemListEnd
+ \vspace{-17pt}
+ 
+   \resumeProjectHeading
+       {\textbf{{Project 3}} $|$ \emph{\href{https://project3.vercel.app/}{Website}{ $|$ }\href{course-code.com}{Source Code}}}{Pandas $|$ Scikit-Learn $|$ Python}
+       \\[5mm]
+       \resumeItemListStart
+       \resumeItem{ Auctor libero tellus facilisis diam tristique habitasse. Vitae eleifend consequat parturient mattis mauris hac convallis scelerisque.}
+       \resumeItemListEnd
+
+\resumeSubHeadingListEnd
+\vspace{-20pt}
+
+% ---------- SKILLS ----------
+
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{   
+      \textbf{Languages}{: Python, Java, mySQL, HTML5, CSS3, TailwindCSS JavaScript, Go, C, C++, bash} \\[1mm]
+      \textbf{Developer Tools}{: Git, Vim, Jira} \\[1mm]
+      \textbf{Libraries/Frameworks}{: ReactJS, PostgreSQL, NextJS, VueJS, NodeJS} \\ [1mm]
+    }}
+ \end{itemize}
+
+% ---------- LEADERSHIP ----------
+
+\section{Leadership} 
+\vspace{-5pt}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+        {\textbf{{Vice President}} 
+        \emph{{\href{www.club-website.com}{ Computer Science Club }
+        }}}
+        {Sep 2025 -- Present}
+        \\[5mm]
+    \resumeItemListStart
+        \resumeItem{"Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.}
+        \resumeItem{Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.}
+    \resumeItemListEnd
+   \resumeSubHeadingListEnd
+\vspace{-10pt}
+
+\vspace{-16pt}
+
+\vspace{3pt}
+
+\vspace{10pt}
+
+\vspace{-15pt}
+
+\end{document}
